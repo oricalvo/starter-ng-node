@@ -1,0 +1,4 @@
+packages:
+    - dtos
+    - server
+    - client

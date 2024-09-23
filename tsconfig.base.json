@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "declaration": true,
+        "declarationMap": true,
+        "composite": true,
+        "experimentalDecorators": true,
+        "noImplicitThis": true,
+        "strictBindCallApply": true,
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true
+    }
+}

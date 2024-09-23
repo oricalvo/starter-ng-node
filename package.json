@@ -1,0 +1,13 @@
+{
+    "name": "@proofig/root",
+    "version": "1.0.1",
+    "description": "",
+    "scripts": {
+        "build": "tsc -b tsconfig.json --pretty false",
+        "rebuild": "tsc -b tsconfig.json -f --pretty false -v"
+    },
+    "dependencies": {
+        "@angular/cli": "^18.2.5",
+        "typescript": "~5.5.2"
+    }
+}
