@@ -1,0 +1,9 @@
+@if(state.loading) {
+    Loading ...
+}
+
+<mat-selection-list>
+    @for(todo of state.todos; track todo.id) {
+        <mat-list-option>{{todo.name}}</mat-list-option>
+    }
+</mat-selection-list>
