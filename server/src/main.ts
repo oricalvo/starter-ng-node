@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
-import { errorHandler, ExpressApplication } from "./express.helpers.js";
-import { configureTodoRoute } from "./todo.route.js";
+import { errorHandler, ExpressApplication } from "./helpers/express.helpers.js";
+import { configureTodoRoute } from "./routes/todo.route.js";
 
 async function main() {
     const app = express();
