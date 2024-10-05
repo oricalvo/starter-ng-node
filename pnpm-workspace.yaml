@@ -1,4 +1,7 @@
 packages:
+    - common
+    - server-common
     - dtos
     - server
     - client
+    - build

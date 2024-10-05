@@ -1,12 +1,14 @@
-import { AppState } from "./appState";
-import { Todo } from "@starter/dtos/dist/todo";
+import { createProfileState, ProfileState } from "./profile.js";
+import { ActivityState, createActivityState } from "./activity.js";
 
-export abstract class AppStore implements AppState {
-    declare loading: boolean;
-    declare todos: Todo[];
+export interface AppState {
+    profile: ProfileState;
+    activity: ActivityState;
 }
 
-export const appStore: AppState = {
-    loading: false,
-    todos: [],
-};
+export function createAppStore(): AppState {
+    return {
+        profile: createProfileState(),
+        activity: createActivityState(),
+    };
+}

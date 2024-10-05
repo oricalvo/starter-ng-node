@@ -1,9 +1,7 @@
-@if(state.loading) {
+@if(state.running) {
     Loading ...
 }
 
-<mat-selection-list>
-    @for(todo of state.todos; track todo.id) {
-        <mat-list-option>{{todo.name}}</mat-list-option>
-    }
-</mat-selection-list>
+@if(canSignInWithGoogle) {
+    <button (click)="login()">Sign in with Google</button>
+}

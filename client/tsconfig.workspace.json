@@ -1,0 +1,19 @@
+{
+    "extends": "../tsconfig.base.json",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "src",
+        "tsBuildInfoFile": "./dist/tsconfig.tsbuildinfo",
+        "experimentalDecorators": true,
+        "lib": ["ES2020", "DOM"]
+    },
+    "include": ["src"],
+    "references": [
+        {
+            "path": "../common/tsconfig.json"
+        },
+        {
+            "path": "../dtos/tsconfig.json"
+        }
+    ]
+}
